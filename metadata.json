@@ -1,0 +1,6 @@
+{
+  "name": "chakraOS",
+  "description": "An instrument for the inner field. A reflective wellbeing application where journaling drives a living map of your energetic field.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --field: #0A0E18;
+    --field-2: #070A12;
+    --panel: #111726;
+    --panel-2: #0E1420;
+    --line: #1E2535;
+    --line-2: #2A3346;
+    --ink: #E9ECF5;
+    --mute: #8A90A6;
+    --faint: #565C72;
+
+    --body: #36D6E7;
+    --journal: #E8B23D;
+    --coach: #3DDC97;
+    --sound: #A56BFF;
+    --you: #FF5CA8;
+
+    --soul: #EAF0FF;
+    --crown: #B14DFF;
+    --third: #6B6BFF;
+    --throat: #3DB6FF;
+    --heart: #36F5A6;
+    --solar: #FFD23D;
+    --sacral: #FF8A3D;
+    --root: #FF4D5E;
+    --earth: #C0433A;
+  }
+
+  body {
+    background-color: var(--field);
+    color: var(--ink);
+    font-family: 'Outfit', system-ui, sans-serif;
+  }
+}
+
+.font-disp {
+  font-family: 'Outfit', system-ui, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.font-serif {
+  font-family: 'Lora', Georgia, serif;
+}
+
+/* Custom glowing & pulse animations */
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 5s ease-in-out infinite;
+}
+
+@keyframes breathe-node {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.18);
+  }
+}
+
+.animate-breathe {
+  animation: breathe-node var(--speed, 4s) ease-in-out infinite;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0E18;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2535;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2A3346;
+}
+
