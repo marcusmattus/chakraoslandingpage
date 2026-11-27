@@ -469,9 +469,14 @@ export const LandingPage: React.FC<LandingPageProps> = (props) => {
           <span>chakra<b>OS</b></span>
         </div>
 
-        <div>
+        <div className="text-center">
           CLINICAL MYSTICISM · 9 NODES · 5 AGENTS · AN INSTRUMENT FOR THE INNER FIELD
         </div>
+
+        <nav className="flex items-center gap-5">
+          <a href="/terms/" className="hover:text-[#E9ECF5] transition-colors">TERMS OF USE</a>
+          <a href="/privacy/" className="hover:text-[#E9ECF5] transition-colors">PRIVACY POLICY</a>
+        </nav>
       </footer>
     </div>
   );
